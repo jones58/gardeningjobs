@@ -56,7 +56,7 @@ const jobsites = [
   {
     name: "Escape The City",
     website:
-      "https://www.escapethecity.org/search/jobs?
+      "https://www.escapethecity.org/search/jobs?"
   },
   {
     name: "Landing Jobs",
