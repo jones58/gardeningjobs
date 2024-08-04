@@ -3,83 +3,28 @@ import ReactConfetti from "react-confetti";
 
 const jobsites = [
   { name: "LinkedIn", website: "https://www.linkedin.com/jobs/" },
-  {
-    name: "Four Day Week",
-    website: "https://fourdayweek.co.uk/find-a-job/",
-  },
+  { name: "Four Day Week", website: "https://fourdayweek.co.uk/find-a-job/" },
   { name: "NHS Jobs", website: "https://beta.jobs.nhs.uk/candidate" },
   { name: "Grad Jobs", website: "https://giveagradago.com/" },
-  {
-    name: "The Dots",
-    website: "https://the-dots.com/jobs/search?",
-  },
-  {
-    name: "Adzuna",
-    website:
-      "https://www.adzuna.co.uk/jobs/",
-  },
-  {
-    name: "Arts Jobs",
-    website: "https://www.artsjobs.org.uk/jobs",
-  },
+  { name: "The Dots", website: "https://the-dots.com/jobs/search?" },
+  { name: "Adzuna", website: "https://www.adzuna.co.uk/jobs/" },
+  { name: "Arts Jobs", website: "https://www.artsjobs.org.uk/jobs" },
   { name: "Career Jet", website: "https://www.careerjet.co.uk/" },
-  {
-    name: "University Jobs",
-    website:
-      "https://www.jobs.ac.uk/search/",
-  },
+  { name: "University Jobs", website: "https://www.jobs.ac.uk/search/" },
   { name: "Reed", website: "https://www.reed.co.uk/" },
   { name: "Monster", website: "https://www.monster.co.uk/" },
-  {
-    name: "Museums",
-    website:
-      "https://www.nationalmuseums.org.uk/jobs/?region=&organisation=&category=30&salary=",
-  },
-  {
-    name: "Glassdoor",
-    website: "https://www.glassdoor.co.uk/Job/index.htm",
-  },
-  {
-    name: "Apprenticeships",
-    website:
-      "https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch",
-  },
-  {
-    name: "CV Library",
-    website: "https://www.cv-library.co.uk/candidate/my-dashboard",
-  },
-  {
-    name: "Charity Job",
-    website: "https://www.charityjob.co.uk/jobs-in-london",
-  },
+  { name: "Museums", website: "https://www.nationalmuseums.org.uk/jobs/?region=&organisation=&category=30&salary=" },
+  { name: "Glassdoor", website: "https://www.glassdoor.co.uk/Job/index.htm" },
+  { name: "Apprenticeships", website: "https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch" },
+  { name: "CV Library", website: "https://www.cv-library.co.uk/candidate/my-dashboard" },
+  { name: "Charity Job", website: "https://www.charityjob.co.uk/jobs-in-london" },
   { name: "TFL", website: "https://tfl.gov.uk/corporate/careers/" },
-  {
-    name: "Escape The City",
-    website:
-      "https://www.escapethecity.org/search/jobs?"
-  },
-  {
-    name: "Landing Jobs",
-    website:
-      "https://landing.jobs/jobs?location=London%2C+United+Kingdom+of+Great+Britain+and+Northern+Ireland&city=London&lr=50&hd=false&t_co=false&t_st=false",
-  },
-
-  {
-    name: "GetMyFirstJob",
-    website: "https://www.getmyfirstjob.co.uk/",
-  },
-  {
-    name: "Gradcracker",
-    website: "https://www.gradcracker.com/",
-  },
-  {
-    name: "NotGoingToUni",
-    website: "https://notgoingtouni.co.uk/",
-  },
-  {
-    name: "If You Could",
-    website: "https://www.ifyoucouldjobs.com/",
-  },
+  { name: "Escape The City", website: "https://www.escapethecity.org/search/jobs?" },
+  { name: "Landing Jobs", website: "https://landing.jobs/jobs?location=London%2C+United+Kingdom+of+Great+Britain+and+Northern+Ireland&city=London&lr=50&hd=false&t_co=false&t_st=false" },
+  { name: "GetMyFirstJob", website: "https://www.getmyfirstjob.co.uk/" },
+  { name: "Gradcracker", website: "https://www.gradcracker.com/" },
+  { name: "NotGoingToUni", website: "https://notgoingtouni.co.uk/" },
+  { name: "If You Could", website: "https://www.ifyoucouldjobs.com/" },
 ];
 
 function Jobboards() {
@@ -99,7 +44,7 @@ function Jobboards() {
             } else {
               return (
                 <a
-                  href={jobsite.website}
+                  href={`${jobsite.website}?cb=${new Date().getTime()}`}
                   target="_blank"
                   rel="noreferrer"
                   key={jobsite.name}
@@ -119,8 +64,7 @@ function Jobboards() {
             }
           })}
         </div>
-        {Object.keys(localStorage).length - 1 <
-        jobsites.length ? null : (
+        {Object.keys(localStorage).length - 1 < jobsites.length ? null : (
           <div>
             <p className="text-4xl font-bold text-center">
               Completed! Come back tomorrow 🌿
