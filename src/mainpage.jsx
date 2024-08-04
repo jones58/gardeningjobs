@@ -27,7 +27,7 @@ function Mainpage() {
   return (
     <div className="h-full min-h-screen bg-indigo-950 p-10 text-slate-200">
       <h1 className="mb-8 text-center text-6xl font-bold">
-        London Frontend Jobs
+        London Gardening Jobs
       </h1>
       <h3 className="mb-8 text-center text-2xl">
         A job board that refreshes everyday. Click to check the job
