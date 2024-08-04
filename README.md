@@ -1,3 +1,5 @@
+// cloned from my main london frontend jobs repo: https://github.com/jones58/jobseeker //
+
 # Jobseeker
 
 - A job board that refreshes daily.
