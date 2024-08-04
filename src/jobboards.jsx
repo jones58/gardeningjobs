@@ -44,7 +44,7 @@ function Jobboards() {
             } else {
               return (
                 <a
-                  href={`${jobsite.website}?cb=${new Date().getTime()}`}
+                  href={jobsite.website}
                   target="_blank"
                   rel="noreferrer"
                   key={jobsite.name}
