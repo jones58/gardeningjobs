@@ -3,12 +3,10 @@ const otherResources = [
     name: "Creative Lives In Progress",
     website: "https://www.creativelivesinprogress.com/opportunitiesboard",
   },
-  { name: "Find A Tech Job", website: "https://www.findatechjob.com/" },
   {
     name: "Silicon Milkround",
     website: "https://www.siliconmilkroundabout.com/",
   },
-  { name: "Hackajob", website: "https://hackajob.com/talent" },
   { name: "View my Github", website: "https://github.com/jones58" },
 ];
 
